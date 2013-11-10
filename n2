@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+do 
+{
+print "Введите число a > ";
+$a=<STDIN>;
+chop $a;
+print "Введите число b > ";
+$b=<STDIN>;
+chop $b;
+if ($a eq $b) {print "a равно b\n"}
+elsif ($a gt $b) {print "a больше b\n"}
+elsif ($a lt $b) {print "a меньше b\n"}
+}
+while ($a ne "0") && ($b ne "0")
