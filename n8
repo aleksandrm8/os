@@ -1,0 +1,23 @@
+#!/usr/bin/perl
+$secret=int(1+rand 100);
+$guess=0;
+while ($secret!=$guess)
+{
+print "Пожалуйста, введите число из диапазона от 1 до 100: ";
+chomp($guess=<STDIN>);
+if ($guess=~/quit|exit|^\s*$/i)
+{
+print "Вы сдались. Секретным числом было $secret.\n";
+last;
+}
+elsif ($guess<$secret)
+{
+print "Слишком малое. Попробуйте еще раз!\n";
+}
+elsif ($guess==$secret)
+{
+print "Вы угадали!\n";
+last;
+}
+else {print "Слишком большое. Попробуйте еще раз!\n";}
+}
