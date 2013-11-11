@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+$file='/home/gubyshev/user/lab5/pass';
+open(INFO, $file);
+@lines=<INFO>;
+close(INFO);
+for ($i=0;$i<=$#lines;$i++)
+{
+chop $lines[$i];
+print $lines[$i],"@\n";
+}
