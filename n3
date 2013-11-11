@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+@mas=("sun","sky","sea");
+print "Способ 1\n";
+print "@mas";
+print "\nСпособ 2\n";
+foreach $f(@mas) {print $f," ";}
+print "\nСпособ 3\n";
+for ($i=0;$i<=$#mas;$i++) {print $mas[$i]," ";}
+print "\nСпособ 4\n";
+$j=0; while ($j le $#mas) {print $mas[$j]," "; $j++}
+print "\n";
