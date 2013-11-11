@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+print "Введите число > ";
+$n=int <STDIN>;
+$i=1; $j=1;
+while ($j ne $n+1)
+{
+$i=$i*$j;
+print $i,"\n";
+$j=$j+1;
+}
+print "Ответ: ",$i,"\n";
