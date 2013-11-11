@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+@mas=("b","c","a");
+print "\nИсходный массив\n";
+print "@mas";
+print "\nВ прямом порядке\n";
+@mas=sort(@mas); print "@mas";
+print "\nВ обратном порядке\n";
+@mas=reverse(@mas); print "@mas";
+print "\n";
