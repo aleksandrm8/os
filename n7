@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-$file='/home/gubyshev/user/lab5/pass';
+$file='pass';
 open(INFO, $file);
 @lines=<INFO>;
 close(INFO);
